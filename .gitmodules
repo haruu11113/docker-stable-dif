@@ -1,0 +1,9 @@
+[submodule "sygil-webui"]
+	path = repo/sygil-webui
+	url = git@github.com:Sygil-Dev/sygil-webui.git
+[submodule "japanese-stable-diffusion"]
+	path = repo/japanese-stable-diffusion
+	url = https://github.com/rinnakk/japanese-stable-diffusion.git
+[submodule "stable-diffusion"]
+	path = repo/stable-diffusion
+	url = https://github.com/CompVis/stable-diffusion.git

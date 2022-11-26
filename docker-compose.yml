@@ -1,0 +1,17 @@
+version: "3"
+services:
+  conda:
+    container_name: conda-stable-diffusion
+    build:
+      context: .
+      dockerfile: ./infra/docker/conda/Dockerfile
+    deploy:
+      resources:
+        reservations:
+          devices:
+            - capabilities: [gpu]
+    ports:
+    - "8844:8888"
+    volumes:
+        - ./repo:/home/ec2-user/repo/
+        - ../.jupyter/:/root/.jupyter/
